@@ -1,1 +1,4 @@
 .idea
+phantomjs/phantomjs
+__pycache__/
+ghostdriver.log
