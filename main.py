@@ -9,9 +9,9 @@ from qcloudsms_py import SmsSingleSender
 import os
 app = Flask(__name__)
 
-username = "小何"
-password = "helloxiaohe"
-phonenumber = "18800201072"
+username = ""
+password = ""
+phonenumber = ""
 dstation = "成都"
 astation = "上海"
 date = "2018-02-27"
@@ -75,9 +75,9 @@ def background_thread():
     global expected_price
     global phonenumber
     index = 1
-    appid = 1400068164
-    appkey = "ae90627c37cacb8b1c8f4ba110e9dbbc"
-    template_id = 86380
+    appid = 
+    appkey = ""
+    template_id = 
     ssender = SmsSingleSender(appid, appkey)
     while True:
         t1 = time.time()

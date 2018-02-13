@@ -2,3 +2,4 @@
 phantomjs/phantomjs
 __pycache__/
 ghostdriver.log
+_main.py
