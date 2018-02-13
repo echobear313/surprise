@@ -27,5 +27,18 @@ appid =
 appkey = ""
 template_id = 
 ```
-填写自己的腾讯云SMS服务的appid、appkey、template_id.   
+填写自己的腾讯云SMS服务的appid、appkey、template_id.     
+* 模板
+```
+携程最低机票达成, 航班{1}, {2}到{3}, 出发时间{4}, 到达时间{5}, 现价{6}.  
+```
+
+根据操作系统下载phantomjs的驱动
+* [官网下载](http://phantomjs.org/)
+
+腾讯云COS下载链接:
+* [Windows](http://hzzone-1252747889.cosgz.myqcloud.com/phantomjs-windows.exe)
+* [Linux](http://hzzone-1252747889.cosgz.myqcloud.com/phantomjs-linux)
+* [Mac](http://hzzone-1252747889.cosgz.myqcloud.com/phantomjs-mac)
+
 
