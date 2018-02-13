@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport">
+    <title>小熊是个大美女</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/static/css/site.css" />
+</head>
+<body>
+
+<div align="center">
+  <h3>当前用户: {{username}}</h3>
+  <h3>出发地: {{dstation}}</h3>
+  <h3>目的地: {{astation}}</h3>
+  <h3>出发时间: {{date}}</h3>
+  <h3>期望价格: {{expected_price}}</h3>
+
+  <div id="doing">
+    <img src="/static/image/loading.gif">
+      <div id="warning"></div>
+  </div>
+  <br>
+  <br>
+
+  <form class="form-horizontal" role="form" action="/" method="post">
+    <div class="form-group">
+      <label class="col-sm-2 control-label">密码</label>
+      <div class="col-sm-10">
+        <input type="password" class="form-control" placeholder="请填写密码" name="password">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">出发地</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="出发城市，需要有机场(例如上海)" name="dstation">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">到达地</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="到达城市，需要有机场(例如上海)" name="astation">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">出发日期</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="出发日期, 形如2018-02-27" name="date">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-sm-2 control-label">期望最低价</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="期望最低价(一个整数)" name="expected_price">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-default">提交</button>
+      </div>
+    </div>
+  </form>
+  <h3>刷新频率不需要太快，后台每一小时刷新一次如果低于最低价发送短信到你的邮箱;</h3>
+  <h3> 加载、获取、解析界面总时间大概在十秒左右，如果获取失败那刷新界面!</h3>
+  <h3>填写表格来更新路程、价格等信息，密码要填对，填写的时候记得按照格式.</h3>
+</div>
+<script type="text/javascript" src="/static/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/static/js/site.js"></script>
+</body>
+</html>
